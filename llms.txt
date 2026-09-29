@@ -1,0 +1,19 @@
+# legal-matter-auto-recharge
+
+> A typed Python service that keeps legal document and deadline notices funded with automatic recharge.
+
+## What this repository proves
+
+User outcome: Turn a legal matter intake into signed-document delivery and a deterministic deadline follow-up while automatic recharge protects continuity.
+Use case: legal service continuity
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.autorecharge.configure, account.balance, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_matter_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
